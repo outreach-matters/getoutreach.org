@@ -1,0 +1,29 @@
+# Site settings
+title: Outreach • Matters
+email:
+description: Decentralized Grassroots Campaign Management for the Fediverse
+
+baseurl: "" # the subpath of your site, e.g. /blog/ (If you use organization leave empty)
+url: "https://getoutreach.org" # the base hostname & protocol for your site
+
+# Social networks usernames (many more available: flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.) see all icon at fontawesome.io
+social:
+  - title: matrix
+    url: https://matrix.to/#/#outreachmatters:matrix.org
+    link_title: join our chatroom
+  - title: mastodon
+    url: https://mastodon.social/@humanetech
+    link_title: contact project maintainer
+  - title: github
+    url: https://github.com/outreach-matters/outreach
+    link_title: jump into the code
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+paginate: 5
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+
+gems: [jekyll-paginate, jekyll-feed]
+
