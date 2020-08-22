@@ -560,6 +560,15 @@ img {
     }
 }
 
+
+.value-box i {
+  font-size: 80px;
+  background: -webkit-linear-gradient(to left, $head-primary, $head-secondary);
+  background: linear-gradient(to left, $head-primary, $head-secondary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 // post styles
 
 .intro-header {
