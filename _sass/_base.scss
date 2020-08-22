@@ -27,6 +27,15 @@ body {
   background-color: #1A1823;
 }
 
+// Credits: https://moderncss.dev/pure-css-smooth-scroll-back-to-top/
+// Smooth scrolling IF user doesn't have a preference due to motion sensitivities
+@media screen and (prefers-reduced-motion: no-preference) {
+  html,
+  body {
+    scroll-behavior: smooth;
+  }
+}
+
 a {
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
@@ -68,37 +77,52 @@ p {
   fill: currentColor;
 }
 
-.navbar-default {
-  background-color: white;
-  border-color: rgba(34, 34, 34, 0.05);
-  -webkit-transition: all 0.35s;
-  -moz-transition: all 0.35s;
-  transition: all 0.35s;
+
+// Credits: https://code-boxx.com/simple-responsive-pure-css-hamburger-menu/
+#hamnav {
+  width: 100%;
+  background-color: #00000033;
+  top: 0;
+
+  margin-bottom: 0;
   font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
   font-weight: 400;
   letter-spacing: 1px;
-  .navbar-header {
-    .navbar-brand {
-      font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
-      font-weight: 200;
-      letter-spacing: 1px;
-      color: $theme-primary;
+  border-color: transparent;
+}
+
+#hamnav a {
+  color: #ff29ff;
+}
+
+/* Hide Hamburger */
+#hamnav label, #hamburger { display: none; }
+
+/* Horizontal Menu Items */
+#hamitems { 
+  // display: flex;
+  margin-top: 15px;
+}
+#hamitems a {
+  padding: 0 10px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+
+  font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: $type-size-5; // was 11px;
+  &.affix {
+    background-color: white;
+    border-color: rgba(34, 34, 34, 0.1);
+    .navbar-header .navbar-brand {
+      color: #222222;
       &:hover, &:focus {
-        color: #fcbd20;
+        color: $theme-primary;
       }
     }
-    .navbar-toggle {
-      font-size: $type-size-6; // was 12px;
-      color: #222222;
-      padding: 8px 10px;
-    }
-  }
-  .nav > li {
-    > a {
-      font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      font-size: $type-size-6; // was 11px;
+    .nav > li > a {
       color: #222222;
       &:focus {
         color: #222222;
@@ -107,58 +131,47 @@ p {
         color: $theme-primary;
       }
     }
-    &.active > a {
-      color: $theme-primary !important;
-      background-color: transparent;
-      &:focus {
-        color: $theme-primary !important;
-        background-color: transparent;
-      }
-      &:hover, &:focus:hover {
-        background-color: transparent;
-      }
-    }
   }
 }
+#hamitems a:hover {
+  background: #401408;
+}
 
-@media (min-width: 768px) {
-  .navbar-default {
-    background-color: transparent;
-    border-color: transparent;
-    .navbar-header .navbar-brand {
-      color: rgba(255, 255, 255, 0.7);
-      &:hover, &:focus {
-        color: white;
-      }
-    }
-    .nav > li > a {
-      color: rgba(255, 255, 255, 0.7);
-      &:focus {
-        color: rgba(255, 255, 255, 0.7);
-      }
-      &:hover, &:focus:hover {
-        color: white;
-      }
-    }
-    &.affix {
-      background-color: white;
-      border-color: rgba(34, 34, 34, 0.1);
-      .navbar-header .navbar-brand {
-        color: #222222;
-        &:hover, &:focus {
-          color: $theme-primary;
-        }
-      }
-      .nav > li > a {
-        color: #222222;
-        &:focus {
-          color: #222222;
-        }
-        &:hover, &:focus:hover {
-          color: $theme-primary;
-        }
-      }
-    }
+/* [ON SMALL SCREENS] */
+@media screen and (max-width: 768px){
+  #hamnav {
+    background-color: #1A1823;
+    border-color: inherit;
+  }
+
+  /* Show Hamburger Icon */
+  #hamnav label { 
+    float: right;
+    display: block; 
+    color: white;
+    font-weight: 400;
+    font-size: 1.2em;
+    margin-top: 4px;
+    padding: 10px 10px 10px 16px;
+    border-left: 1px #413c58 inset;
+  }
+
+  #hamitems {
+    clear: both;
+  }
+
+  /* Break down menu items into vertical */
+  #hamitems a {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+  }
+
+  /* Toggle Show/Hide Menu */
+  #hamitems { display: none; }
+  #hamnav input:checked ~ #hamitems { 
+    display: block;
+    background-color: #1A1823;
   }
 }
 
@@ -520,7 +533,7 @@ img {
             .element-description {
                 margin-top: 30px;
                 font-weight: 400;
-                font-size: $type-size-5 // was 18px;
+                font-size: 3.2vw //$type-size-5 // was 18px;
             }
         }
     }
@@ -539,7 +552,7 @@ img {
                     font-size: $type-size-2 // was 28px;
                 }
                 .element-description {
-                    font-size: $type-size-4 // was 20px;
+                    font-size: 1.2vw //$type-size-4 // was 20px;
                 }
             }
         }
