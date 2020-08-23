@@ -2,11 +2,10 @@
 title: Outreach • Matters
 email:
 description: Decentralized Grassroots Campaign Management for the Fediverse
+baseurl: ""
+url: "https://getoutreach.org"
 
-baseurl: "" # the subpath of your site, e.g. /blog/ (If you use organization leave empty)
-url: "https://getoutreach.org" # the base hostname & protocol for your site
-
-# Social networks usernames (many more available: flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.) see all icon at fontawesome.io
+# Contacts for the project.
 social:
   - title: matrix
     url: https://matrix.to/#/#outreachmatters:matrix.org
