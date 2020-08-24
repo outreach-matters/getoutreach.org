@@ -47,10 +47,10 @@ a {
 }
 
 hr {
-  max-width: 100px;
+  max-width: 300px;
   margin: 25px auto 0;
   border-width: 1px;
-  border-color: rgba(34, 34, 34, 0.1);
+  border-color: $theme-primary;
   &.light {
     border-color: white;
   }
@@ -242,6 +242,9 @@ section {
     }
     .highlights-container {
       margin-bottom: 100px;
+      h3 {
+        color: $theme-primary;
+      }
     }
     .feature-item {
       text-align: center;
@@ -255,6 +258,12 @@ section {
         background: linear-gradient(to left, $head-primary, $head-secondary);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+      }
+    }
+    .fediverse {
+      img {
+        text-align: center;
+        width: 80%;
       }
     }
   }
