@@ -495,7 +495,7 @@ img {
             .campaign-element,
             .element-description {
                 @include sans-serif-font;
-                padding: 0 15px;
+                padding: 0 30px;
             }
             .campaign-element {
                 text-transform: uppercase;
@@ -505,7 +505,7 @@ img {
             .element-description {
                 margin-top: 10px;
                 font-weight: 400;
-                font-size: 3.7vw
+                font-size: 4.4vw
             }
         }
     }
@@ -524,8 +524,9 @@ img {
                     font-size: $type-size-2;
                 }
                 .element-description {
-                    margin-top: 30px;
-                    font-size: 1.2vw;
+                    margin-top: 15px;
+                    font-size: 1.5vw;
+                    padding: 0 60px
                 }
             }
         }
