@@ -237,7 +237,7 @@ section {
       }
     }
     .highlights-container, .feature-item {
-      max-width: 300px;
+      max-width: 80%;
       margin: 0 auto;
     }
     .highlights-container {
@@ -259,11 +259,14 @@ section {
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
       }
-    }
-    .fediverse {
-      img {
-        text-align: center;
-        width: 80%;
+      &.margin-small {
+        margin-bottom: 40px !important;
+      }
+      .feature-img {
+        img {
+          text-align: center;
+          width: 100%;
+        }
       }
     }
   }
@@ -366,7 +369,7 @@ section {
 @media (min-width: 992px) {
   section.highlights {
     .feature-item {
-      max-width: none;
+      max-width: 100%;
     }
   }
 }

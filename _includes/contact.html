@@ -1,11 +1,10 @@
 
 <section id="contact" class="contact bg-primary">
     <div class="container">
-        <h2>We <i class="icon-heart"></i> new friends!</h2>
+        <h2>Reach Out.. We Love New Friends</h2>
         <ul class="list-inline list-social">
             {% for network in site.social %}
             <li class="social-{{ network.title }}">
-                <!-- <a href="{{ network.url }}" class="btn-social btn-outline"><i class="fa fa-fw fa-{{ network.title }}"></i></a> -->
                 <a title="{{ network.link_title }}" href="{{ network.url }}" class="btn-social btn-outline"><img src="/img/social/{{ network.title }}.svg"></a>
             </li>
             {% endfor %}
@@ -14,6 +13,6 @@
 </section>
 <footer>
     <div class="container">
-        <p><a rel="license" title="This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License." href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a> &nbsp;&copy; 2020 <a rel="nofollow" target="_blank" href="https://codeberg.org/teaserbot-labs/">teaserbot labs™</a>, site <a href="https://github.com/outreach-matters/getoutreach.org">source</a>, theme <a href="https://github.com/jekynewage/jekynewage.github.io">jekynewage</a>, no trackers, no ads, no javascript</p>
+        <p><a rel="license" title="This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License." href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a> &nbsp;&copy; 2020 <a rel="nofollow" target="_blank" href="https://codeberg.org/teaserbot-labs/">teaserbot labs™</a>, site <a href="https://github.com/outreach-matters/getoutreach.org">source</a>, theme <a href="https://github.com/jekynewage/jekynewage.github.io">jekynewage</a>, artwork <a href="https://www.manypixels.co/gallery/">manypixels</a> <a href="https://www.svgrepo.com/">svgrepo</a>, no trackers, no ads, no javascript</p>
     </div>
 </footer>
