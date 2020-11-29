@@ -7,15 +7,20 @@ url: "https://getoutreach.org"
 
 # Contacts for the project.
 social:
+  - title: codeberg
+    url: https://codeberg.org/teaserbot-labs/outreach-matters
+    link_title: practice readme-driven design
   - title: matrix
     url: https://matrix.to/#/#outreachmatters:matrix.org
     link_title: join our chatroom
   - title: mastodon
     url: https://mastodon.social/@humanetech
     link_title: contact project maintainer
-  - title: github
-    url: https://github.com/outreach-matters/outreach
-    link_title: jump into the code
+
+# Hide github on the Contacts bar for now (still shown in Project section), as 4 contacts don't fit well on mobile.
+#  - title: github
+#    url: https://github.com/outreach-matters/outreach
+#    link_title: jump into the code
 
 # Build settings
 markdown: kramdown
