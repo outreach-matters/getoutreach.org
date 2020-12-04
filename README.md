@@ -8,4 +8,4 @@ Based on the [Jekynewage](https://github.com/jekynewage/jekynewage.github.io) th
 
 ## License
 
-[AGPL-3.0](LICENSE) for project code, and [CC-BY-NC-SA-4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) for documentation.
+[AGPL-3.0](LICENSE) for project code, and [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/) for documentation.
